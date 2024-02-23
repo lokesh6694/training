@@ -1,0 +1,20 @@
+image:
+  pullPolicy: IfNotPresent
+
+nfs:
+  serverIP: 10.10.15.62
+  mysqlNFSPath: "/var/nfs/user05/share2"
+  wordpressNFSPath: "/var/nfs/user05/share3"
+
+yourProjectName: lokesh94
+
+pv:
+  mysqlPVName: "mysql-pv-lokesh94"
+  mysqlPVSize: 100Mi
+
+  wordpressPVName: "wordpress-pv-lokesh94"
+  wordpressPVSize: 100Mi
+
+pvc:
+  mysqlPVCName: "mysql-pvc-lokesh94"
+  wordpressPVCName: "wordpress-pvc-lokesh94"

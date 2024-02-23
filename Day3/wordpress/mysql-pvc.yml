@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc-lokesh6694 # Replace 'jegan' with your name
+spec:
+  selector:
+    matchLabels:
+      name: lokesh6694 # Replace 'jegan' with your name
+  accessModes:
+  - ReadWriteMany
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Mi
